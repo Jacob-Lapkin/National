@@ -9,8 +9,9 @@
     height: 500px;
 }
 
-.button {
-    
+.display {
+    font-size: 150%;
+    margin-top: 1%;
 }
 .img-fluid {
     border-top: solid 3px yellow;

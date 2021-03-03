@@ -55,8 +55,14 @@
               <img class="first-slide" src="images/Yellowstone.jpg" alt="First slide">
               <div class="container">
                 <div class="carousel-caption text-left">
-                  <h1>Yellow Stone</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <h1>Yellowstone</h1>
+                  <div class="input">
+                        <input type="submit" value="Get Local Temperature" class="btn btn-light">
+                  </div>
+                  <div class="display">
+                        <p class="desc"></p>
+                        <p class="temp"></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -65,7 +71,13 @@
               <div class="container">
                 <div class="carousel-caption">
                   <h1>Yosemite</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <div class="input">
+                    <input type="submit" value="Get Local Temperature" class="btn btn-light">
+              </div>
+              <div class="display">
+                    <p class="desc"></p>
+                    <p class="temp"></p>
+              </div>
                 </div>
               </div>
             </div>
@@ -74,7 +86,13 @@
               <div class="container">
                 <div class="carousel-caption text-right">
                   <h1>Zion</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <div class="input">
+                    <input type="submit" value="Get Local Temperature" class="btn btn-light">
+              </div>
+              <div class="display">
+                    <p class="desc"></p>
+                    <p class="temp"></p>
+              </div>
                 </div>
               </div>
             </div>
@@ -182,6 +200,30 @@ today = mm + '/' + dd + '/' + yyyy;
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
+ 
+    <script>
+        var button = document.querySelector('.btn')
+        var inputValue = document.querySelector('.inputValue')
+        var name = document.querySelector('.name');
+        var desc = document.querySelector('.desc');
+        var temp = document.querySelector('.temp');
+
+        button.addEventListener('click', function(){
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=Yellowstone&units=imperial&appid=570830c0c8ec32c1824ab7c214e2493f')
+        .then(response => response.json())
+        .then(data => {
+            var nameValue = data['name'];
+            var tempValue = data['main']['temp'];
+            var descValue = data['weather'][0]['description'];
+
+            temp.innerHTML = tempValue + ' F';
+            desc.innerHTML = descValue;
+        })
+        } )
+
+    </script>
+
+
+
 </body>
 </html>

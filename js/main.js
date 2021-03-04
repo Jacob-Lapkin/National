@@ -29,7 +29,7 @@ var button = document.querySelector('.btn')
         })
         } )
 
-
+//remove temperature button 
 $(function () {
 
     $('#yel-but').on('click', function(){
@@ -37,3 +37,54 @@ $(function () {
       })
 
 });
+
+
+
+  // Initialize and add the map
+function initMap() {
+    // The location of Uluru
+    var uluru = { lat: 63.069, lng: -151.00};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+
+    // The location of Rocky
+    var uluru = { lat: 40.342, lng: -105.68};
+    // The map, centered at Rocky
+    var map = new google.maps.Map(document.getElementById("map1"), {
+      zoom: 4,
+      center: uluru,
+    });
+    // The marker, positioned at Rocky
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+
+    // The location of Zion
+    var uluru = { lat: 37.298, lng: -113.02};
+    // The map, centered at Zion
+    var map = new google.maps.Map(document.getElementById("map2"), {
+      zoom: 4,
+      center: uluru,
+    });
+    // The marker, positioned at Zion
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+
+
+
+
+
+  
+  

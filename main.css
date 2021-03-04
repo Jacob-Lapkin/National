@@ -57,6 +57,51 @@ h1 {
       margin-top: 10%;
   }
 
+  /* Set the size of the div element that contains the map */
+#map {
+    transform: rotate(-6deg);
+    margin-left: 15%;
+    padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 3%;
+
+    height: 300px;
+    /* The height is 400 pixels */
+    width: 75%;
+    /* The width is the width of the web page */
+  }
+
+  #map1 {
+    transform: rotate(-6deg);
+    margin-left: 15%;
+    padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 3%;
+
+    height: 300px;
+    /* The height is 400 pixels */
+    width: 75%;
+    /* The width is the width of the web page */
+  }
+
+  #map2 {
+    transform: rotate(-6deg);
+    margin-left: 15%;
+    padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 3%;
+
+    height: 300px;
+    /* The height is 400 pixels */
+    width: 75%;
+    /* The width is the width of the web page */
+  }
 
 
  

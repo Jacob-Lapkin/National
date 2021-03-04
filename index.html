@@ -6,11 +6,17 @@
     <title>Home</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="carousel.css">
+
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">National Parks</a>
+        <a class="navbar-brand">National Parks</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,6 +55,8 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -96,6 +104,21 @@
                 </div>
               </div>
             </div>
+            <div class="carousel-item">
+                <img class="second-slide" src="images/acadia.jpg" alt="Forth slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Acadia</h1>
+                    <div class="input">
+                      <input type="submit" value="Get Local Temperature" class="btn btn-light">
+                </div>
+                <div class="display">
+                      <p class="desc"></p>
+                      <p class="temp"></p>
+                </div>
+                  </div>
+                </div>
+              </div>
           </div>
           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -114,13 +137,13 @@
     <div class="row" id="utah-row">
         <div class="col-md-4">
             <div class="container">
-                <h1>Alaska</h1>
+                <p class="states">Alaska</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rem ipsa! Culpa obcaecati vitae iure animi quos. Neque voluptas recusandae eum ab, sint, fugit soluta dolor nemo, assumenda libero ea.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam asperiores fuga ducimus consequatur libero iusto magnam vero cum rem dolor animi nesciunt maiores quasi, tempore ab inventore expedita neque impedit.</p>
             </div>
         </div>
         <div class="col-md-8">
-            <div class="container">
+            <div class="right">
                 <img src="images/denali.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
             </div>
         </div>
@@ -128,13 +151,13 @@
 
 <div class="row" id="cal-row">
     <div class="col-md-8">
-        <div class="container">
+        <div class="left">
             <img src="images/redwoods.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         </div>
     </div>
     <div class="col-md-4">
         <div class="container">
-            <h1>California</h1>
+            <p class="states">California</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae officia nobis, facilis placeat reprehenderit blanditiis minus aspernatur deserunt fugit quisquam ullam voluptate totam a ratione soluta omnis laborum error? Provident.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ad esse blanditiis facilis aliquam, iure nostrum porro eos quas explicabo enim corrupti dolor assumenda harum, inventore repellat. Error, dolorem animi?</p>
         </div>
@@ -144,26 +167,26 @@
 <div class="row" id="col-row">
     <div class="col-md-4">
         <div class="container">
-            <h1>Colorado</h1>
+            <p class="states">Colorado</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt consequatur magnam. Dicta numquam alias voluptatibus natus, velit saepe nostrum officiis corrupti adipisci debitis quis, nesciunt odio vel veritatis molestiae.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga dignissimos sunt deserunt tempore quisquam omnis ipsam, quae soluta eius laborum nostrum exercitationem eos reiciendis animi libero ratione? Doloremque, quae!</p>
         </div>
     </div>
     <div class="col-md-8">
-        <div class="container">
+        <div class="right">
             <img src="images/sand.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         </div>
     </div>
 </div>
 <div class="row" id="mon-row">
     <div class="col-md-8">
-        <div class="container">
+        <div class="left">
             <img src="images/glacier.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         </div>
     </div>
     <div class="col-md-4">
         <div class="container">
-            <h1>Montana</h1>
+            <p class="states">Montana</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ut. Ex voluptatem illo, sint voluptatum enim, excepturi debitis, unde est vero placeat mollitia repudiandae consectetur et veritatis ea perferendis soluta.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga dignissimos sunt deserunt tempore quisquam omnis ipsam, quae soluta eius laborum nostrum exercitationem eos reiciendis animi libero ratione? Doloremque, quae!</p>
         </div>
@@ -172,13 +195,13 @@
 <div class="row" id="utah-row">
     <div class="col-md-4">
         <div class="container">
-            <h1>Utah</h1>
+            <p class="states">Utah</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rem ipsa! Culpa obcaecati vitae iure animi quos. Neque voluptas recusandae eum ab, sint, fugit soluta dolor nemo, assumenda libero ea.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam asperiores fuga ducimus consequatur libero iusto magnam vero cum rem dolor animi nesciunt maiores quasi, tempore ab inventore expedita neque impedit.</p>
         </div>
     </div>
     <div class="col-md-8">
-        <div class="container">
+        <div class="right">
             <img src="images/arches.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         </div>
     </div>

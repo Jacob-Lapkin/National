@@ -1,29 +1,45 @@
 
-#carouselId {
-    border-top: solid 3px yellow;
-    border-bottom: solid 3px blue;
-    border-right: solid 3px red;
-    border-left: solid 3px green;
-}
-.carousel-item {
-    height: 500px;
+
+
+h1 {
+    text-shadow: 4px 4px 4px black;
+
 }
 
 .display {
-    font-size: 150%;
+    font-size: 100%;
     margin-top: 1%;
+
 }
 .img-fluid {
-    border-top: solid 3px yellow;
-    border-bottom: solid 3px blue;
-    border-right: solid 3px red;
-    border-left: solid 3px green;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
     border-radius: 3%;
 }
+.right {
+    transform: rotate(3deg);
+}
+
+.left {
+    transform: rotate(-3deg);
+
+}
+
 
   #body-grid {
       background-color:white;
       color: black;
+      text-align: center;
+      
+  }
+
+  .states{
+    font-family: cursive;
+    text-shadow: 2px 2px 2px #aaaaaa;
+
+    font-size: 300%;
   }
 
   #utah-row {

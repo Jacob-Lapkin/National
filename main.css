@@ -60,11 +60,12 @@ h1 {
   /* Set the size of the div element that contains the map */
 #map {
     transform: rotate(-6deg);
+    margin-top: -3%;
     margin-left: 15%;
     padding: 10px 10px 20px 10px;
   border: 1px solid #BFBFBF;
   background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 5px 5px 5px #aaaaaa;
     border-radius: 3%;
 
     height: 300px;
@@ -75,11 +76,12 @@ h1 {
 
   #map1 {
     transform: rotate(-6deg);
+    margin-top: -3%;
     margin-left: 15%;
     padding: 10px 10px 20px 10px;
   border: 1px solid #BFBFBF;
   background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 5px 5px 5px #aaaaaa;
     border-radius: 3%;
 
     height: 300px;
@@ -90,11 +92,12 @@ h1 {
 
   #map2 {
     transform: rotate(-6deg);
+    margin-top: -3%;
     margin-left: 15%;
-    padding: 10px 10px 20px 10px;
+    padding:10px 10px 20px 10px;
   border: 1px solid #BFBFBF;
   background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 5px 5px 5px #aaaaaa;
     border-radius: 3%;
 
     height: 300px;

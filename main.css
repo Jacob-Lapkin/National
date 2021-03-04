@@ -12,18 +12,14 @@ h1 {
 
 }
 .img-fluid {
-  padding: 10px 10px 20px 10px;
-  border: 1px solid #BFBFBF;
   background-color: white;
   box-shadow: 10px 10px 5px #aaaaaa;
     border-radius: 3%;
 }
 .right {
-    transform: rotate(3deg);
 }
 
 .left {
-    transform: rotate(-3deg);
 
 }
 
@@ -36,7 +32,6 @@ h1 {
   }
 
   .states{
-    font-family: cursive;
     text-shadow: 2px 2px 2px #aaaaaa;
 
     font-size: 300%;
@@ -59,7 +54,6 @@ h1 {
 
   /* Set the size of the div element that contains the map */
 #map {
-    transform: rotate(-6deg);
     margin-top: -3%;
     margin-left: 15%;
     padding: 10px 10px 20px 10px;
@@ -75,7 +69,6 @@ h1 {
   }
 
   #map1 {
-    transform: rotate(-6deg);
     margin-top: -3%;
     margin-left: 15%;
     padding: 10px 10px 20px 10px;
@@ -91,7 +84,6 @@ h1 {
   }
 
   #map2 {
-    transform: rotate(-6deg);
     margin-top: -3%;
     margin-left: 15%;
     padding:10px 10px 20px 10px;

@@ -23,9 +23,9 @@ today = mm + '/' + dd + '/' + yyyy;
     temp.innerHTML = tempValue + ' F';
     desc.innerHTML = descValue;
     document.getElementById('temp-icon').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
-
   })
 
+  //temperature 
 
 
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand">National Parks</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Weather Reports</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Park Websites</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="https://www.nps.gov/arch/index.htm">Arches National Park</a>
+                        <a class="dropdown-item" href="https://www.nps.gov/glac/index.htm">Glacier National Park</a>
+                        <a class="dropdown-item" href="https://www.nps.gov/yell/index.htm">Yellow Stone National Park</a>
+                        <a class="dropdown-item" href="https://www.nps.gov/yose/index.htm">Yosemite National Park</a>
+                        <a class="dropdown-item" href="https://www.nps.gov/zion/index.htm">Zion National Park</a>
+
+                    </div>
+                </li>
+            </ul>
+            <p class = "navbar-brand" id="current-date"></p>
+        </div>
+        
+    </nav>
+
+    Current Weather 
+  <!-- weather.js connection-->    
+<script type="text/javascript" src="js/weather.js"></script>
+  
+</body>
+</html>

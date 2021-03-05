@@ -9,21 +9,17 @@ h1 {
 
 }
 
+/* temperature */ 
 .display {
-    font-size: 100%;
+    font-size: 10%;
     margin-top: 1%;
-
 }
+
+
 .img-fluid {
   background-color: white;
   box-shadow: 10px 10px 5px #aaaaaa;
     border-radius: 3%;
-}
-.right {
-}
-
-.left {
-
 }
 
 

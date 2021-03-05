@@ -10,14 +10,24 @@ today = mm + '/' + dd + '/' + yyyy;
 
 
 
-//remove temperature button 
-$(function () {
+//temperature yellowstone
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=Denver&appid=570830c0c8ec32c1824ab7c214e2493f&units=imperial')  
+  .then(function(resp) { return resp.json() }) // Convert data to json
+  .then(data =>  {
+    var tempValue = data['main']['temp'];
+    var descValue = data['weather'][0]['description'];
+    var iconValue = data['weather'][0]['icon']
 
-    $('#yel-but').on('click', function(){
-        $(this).closest('.input').remove();
-      })
 
-});
+    console.log(data)
+    temp.innerHTML = tempValue + ' F';
+    desc.innerHTML = descValue;
+    document.getElementById('temp-icon').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
+
+  })
+
+
+
 
 
 

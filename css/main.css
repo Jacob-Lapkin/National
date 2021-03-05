@@ -10,9 +10,16 @@ h1 {
 }
 
 /* temperature */ 
-.display {
-    font-size: 10%;
-    margin-top: 1%;
+.weather {
+  margin-top: 40px;
+  color:white;
+  text-shadow: 4px 4px 4px black;
+
+}
+.temp-icon {
+  margin-top: -30px;
+  height:100px;
+  width: 100px;
 }
 
 
@@ -36,19 +43,8 @@ h1 {
     font-size: 300%;
   }
 
-  #utah-row {
-      padding-top: 10%;
-  }
-  #cal-row {
-      margin-top: 10%;
-  }
-
-  #col-row {
-      margin-top: 10%;
-  }
-
-  #mon-row {
-      margin-top: 10%;
+  .row {
+    margin-top: 10%;
   }
 
   /* Set the size of the div element that contains the map */

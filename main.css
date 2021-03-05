@@ -1,8 +1,11 @@
 
-
-
 h1 {
     text-shadow: 4px 4px 4px black;
+}
+
+#body-head {
+  font-size: 400%;
+  text-shadow: 2px 2px 2px #aaaaaa;
 
 }
 
@@ -53,7 +56,7 @@ h1 {
   }
 
   /* Set the size of the div element that contains the map */
-#map {
+.map-card {
     margin-top: -3%;
     margin-left: 15%;
     padding: 10px 10px 20px 10px;
@@ -68,35 +71,6 @@ h1 {
     /* The width is the width of the web page */
   }
 
-  #map1 {
-    margin-top: -3%;
-    margin-left: 15%;
-    padding: 10px 10px 20px 10px;
-  border: 1px solid #BFBFBF;
-  background-color: white;
-  box-shadow: 5px 5px 5px #aaaaaa;
-    border-radius: 3%;
-
-    height: 300px;
-    /* The height is 400 pixels */
-    width: 60%;
-    /* The width is the width of the web page */
-  }
-
-  #map2 {
-    margin-top: -3%;
-    margin-left: 15%;
-    padding:10px 10px 20px 10px;
-  border: 1px solid #BFBFBF;
-  background-color: white;
-  box-shadow: 5px 5px 5px #aaaaaa;
-    border-radius: 3%;
-
-    height: 300px;
-    /* The height is 400 pixels */
-    width: 60%;
-    /* The width is the width of the web page */
-  }
 
 
  

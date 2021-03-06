@@ -11,7 +11,7 @@ today = mm + '/' + dd + '/' + yyyy;
 
 
 //temperature yellowstone
-  fetch('https://api.openweathermap.org/data/2.5/weather?q=Denver&appid=570830c0c8ec32c1824ab7c214e2493f&units=imperial')  
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=Old Faithful&appid=570830c0c8ec32c1824ab7c214e2493f&units=imperial')  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(data =>  {
     var tempValue = data['main']['temp'];

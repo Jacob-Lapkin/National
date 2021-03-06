@@ -41,6 +41,22 @@ today = mm + '/' + dd + '/' + yyyy;
     document.getElementById('temp-iconyos').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
   })
 
+  //temperature canyonlands 
+
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=Moab&appid=570830c0c8ec32c1824ab7c214e2493f&units=imperial')  
+  .then(function(resp) { return resp.json() }) // Convert data to json
+  .then(data =>  {
+    var tempValue = data['main']['temp'];
+    var descValue = data['weather'][0]['description'];
+    var iconValue = data['weather'][0]['icon']
+
+
+    console.log(data)
+    tempcan.innerHTML = tempValue + ' F';
+    desccan.innerHTML = descValue;
+    document.getElementById('temp-iconcan').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
+  })
+
 
 
 

@@ -18,9 +18,12 @@ today = mm + '/' + dd + '/' + yyyy;
     var descValue = data['weather'][0]['description'];
     var iconValue = data['weather'][0]['icon']
 
+    var intTemp = Math.round(tempValue)
+   
+
 
     console.log(data)
-    temp.innerHTML = tempValue + ' F';
+    temp.innerHTML = intTemp;
     desc.innerHTML = descValue;
     document.getElementById('temp-icon').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
   })
@@ -34,9 +37,10 @@ today = mm + '/' + dd + '/' + yyyy;
     var descValue = data['weather'][0]['description'];
     var iconValue = data['weather'][0]['icon']
 
+    var intTemp = Math.round(tempValue)
 
     console.log(data)
-    tempyos.innerHTML = tempValue + ' F';
+    tempyos.innerHTML = intTemp;
     descyos.innerHTML = descValue;
     document.getElementById('temp-iconyos').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
   })
@@ -50,9 +54,10 @@ today = mm + '/' + dd + '/' + yyyy;
     var descValue = data['weather'][0]['description'];
     var iconValue = data['weather'][0]['icon']
 
+    var intTemp = Math.round(tempValue)
 
     console.log(data)
-    tempcan.innerHTML = tempValue + ' F';
+    tempcan.innerHTML = intTemp;
     desccan.innerHTML = descValue;
     document.getElementById('temp-iconcan').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
   })
@@ -66,9 +71,10 @@ today = mm + '/' + dd + '/' + yyyy;
     var descValue = data['weather'][0]['description'];
     var iconValue = data['weather'][0]['icon']
 
+    var intTemp = Math.round(tempValue)
 
     console.log(data)
-    tempaca.innerHTML = tempValue + ' F';
+    tempaca.innerHTML = intTemp;
     descaca.innerHTML = descValue;
     document.getElementById('temp-iconaca').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
   })
@@ -82,14 +88,15 @@ today = mm + '/' + dd + '/' + yyyy;
     var descValue = data['weather'][0]['description'];
     var iconValue = data['weather'][0]['icon']
 
+    var intTemp = Math.round(tempValue)
 
     console.log(data)
-    tempvol.innerHTML = tempValue + ' F';
+    tempvol.innerHTML = intTemp;
     descvol.innerHTML = descValue;
     document.getElementById('temp-iconvol').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
   })
 
-  //temperature volcano 
+  //temperature tortuga 
 
   fetch('https://api.openweathermap.org/data/2.5/weather?q=Key West&appid=570830c0c8ec32c1824ab7c214e2493f&units=imperial')  
   .then(function(resp) { return resp.json() }) // Convert data to json
@@ -98,9 +105,10 @@ today = mm + '/' + dd + '/' + yyyy;
     var descValue = data['weather'][0]['description'];
     var iconValue = data['weather'][0]['icon']
 
+    var intTemp = Math.round(tempValue)
 
     console.log(data)
-    tempdry.innerHTML = tempValue + ' F';
+    tempdry.innerHTML = intTemp;
     descdry.innerHTML = descValue;
     document.getElementById('temp-icondry').innerHTML = '<img src="http://openweathermap.org/img/w/' + iconValue + '.png"/>';
   })

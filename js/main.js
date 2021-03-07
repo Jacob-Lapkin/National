@@ -256,6 +256,23 @@ function initMap() {
       map: map,
     });
 
+    //STARTING MONTANTA
+    // The location of glacier
+    var glacier = { lat: 48.759, lng: -113.787};
+    // The map, centered at glacier
+    var map = new google.maps.Map(document.getElementById("map4"), {
+      zoom: 4,
+      center: glacier,
+    });
+    // The marker, positioned at glacier
+    var marker = new google.maps.Marker({
+      position: glacier,
+      map: map,
+    });
+  
+
+
+    //STARTING UTAH
     // The location of Zion
     var zion = { lat: 37.298, lng: -113.02};
     // The map, centered at Zion
@@ -268,7 +285,7 @@ function initMap() {
       position: zion,
       map: map,
     });
-  }
+  };
 
 
 

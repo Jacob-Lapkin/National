@@ -1,3 +1,40 @@
+.thumbnail{        
+    width: 300px; 
+     width : 100%;
+    height: 300px;
+    overflow: auto;
+}
+
+.thumbnail img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    border:solid black 5px;
+}
+
+.centered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size:200%;
+    opacity: 0.5;
+  }
+  
+  .rounded:hover ~ .centered {
+    display: none
+  }
+
+  
+  #main:hover + #show {
+    display: block
+  }
+  #main:hover ~ #hide {
+    display: none
+  }
+  
 .pagination {
     justify-content: center;
 }
+

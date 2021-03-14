@@ -5,6 +5,10 @@
     overflow: auto;
 }
 
+.row {
+  margin-bottom: -10%;
+}
+
 .thumbnail img{
     width: 75%;
     height: 75%;
@@ -37,5 +41,7 @@
   
 .pagination {
     justify-content: center;
+    margin-top: 10%;
 }
+
 

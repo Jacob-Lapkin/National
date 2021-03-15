@@ -9,6 +9,11 @@
   margin-bottom: -10%;
 }
 
+#gallery-head {
+  margin-top: 5%;
+  margin-bottom: -5%;
+}
+
 .thumbnail img{
     width: 75%;
     height: 75%;

@@ -3,6 +3,11 @@ h1 {
     text-shadow: 4px 4px 4px black;
 }
 
+h2 {
+  text-shadow: 4px 4px 4px #aaaaaa;
+  color: black;
+}
+
 .body-head {
   font-size: 400%;
   text-shadow: 2px 2px 2px #aaaaaa;

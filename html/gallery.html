@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <style>
@@ -55,19 +55,19 @@
     <div class="row">
       <div class="col-md-4">
         <div class="thumbnail" align="center">
-          <img src="gallery/acadia.jpg" class="rounded" alt="...">
+          <img src="../gallery/acadia.jpg" class="rounded" alt="...">
           <div class="centered">Acadia</div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="thumbnail" align="center">
-          <img src="gallery/AS.jpg" class="rounded" alt="...">
+          <img src="../gallery/AS.jpg" class="rounded" alt="...">
           <div class="centered">America Samoa</div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="thumbnail" align="center">
-          <img src="gallery/arches.jpg" class="rounded" alt="...">
+          <img src="../gallery/arches.jpg" class="rounded" alt="...">
           <div class="centered">Arches</div>
         </div>
       </div>
@@ -76,20 +76,20 @@
     <div class="row">
       <div class="col-md-4">
         <div class="thumbnail" align="center">
-          <img src="gallery/badlands.jpg" class="rounded" alt="...">
+          <img src="../gallery/badlands.jpg" class="rounded" alt="...">
           <div class="centered">Badlands</div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="thumbnail" align="center">
-          <img src="gallery/big_bend.jpg" class="rounded" alt="...">
+          <img src="../gallery/big_bend.jpg" class="rounded" alt="...">
           <div class="centered">Big Bend</div>
 
         </div>
       </div>
       <div class="col-md-4" align="center">
         <div class="thumbnail">
-          <img src="gallery/biscayne.jpg" class="rounded" alt="...">
+          <img src="../gallery/biscayne.jpg" class="rounded" alt="...">
           <div class="centered">Biscayne</div>
         </div>
       </div>
@@ -98,19 +98,19 @@
     <div class="row">
       <div class="col-md-4">
         <div class="thumbnail" align="center">
-          <img src="gallery/black_canyon.jpg" class="rounded" alt="...">
+          <img src="../gallery/black_canyon.jpg" class="rounded" alt="...">
           <div class="centered">Black Canyon of the Gunnison</div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="thumbnail" align="center">
-          <img src="gallery/bryce.jpg" class="rounded" alt="...">
+          <img src="../gallery/bryce.jpg" class="rounded" alt="...">
           <div class="centered">Bryce Canyon</div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="thumbnail" align="center">
-          <img src="gallery/canyon.jpg" class="rounded" alt="...">
+          <img src="../gallery/canyon.jpg" class="rounded" alt="...">
           <div class="centered">Canyonlands</div>
         </div>
       </div>
@@ -140,8 +140,8 @@
         </p>
       </footer>
   <!-- weather.js connection-->    
-<script type="text/javascript" src="js/gallery.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/gallery.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 
 <!--translate-->
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -165,6 +165,17 @@
     function(){$(this).animate({width: "75%", height:"75%"}, 300);}
 );
   });
+</script>
+
+<script>
+  $(function () {
+    $.getJSON("https://api.nasa.gov/planetary/apod?api_key=CEPZBT7Hzu32m4BCmgMzyg5OG3AXb6T4S1kquGud",
+        function (data) {
+            console.log(data)
+            
+        }
+    );
+});
 </script>
 
 

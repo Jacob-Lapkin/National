@@ -1,3 +1,5 @@
+/* nav*/
+
 
 h1 {
     text-shadow: 4px 4px 4px black;
@@ -12,6 +14,15 @@ h2 {
   font-size: 400%;
   text-shadow: 2px 2px 2px #aaaaaa;
 
+}
+
+/*Card */
+#card-cont{
+  background-color: rgb(250, 250, 237) ;
+  padding: 10%;
+  border-radius: 10%;
+  border:solid 1px black;
+  margin-bottom: 5%;
 }
 
 /* temperature */ 
@@ -29,47 +40,57 @@ h2 {
 
 
 .img-fluid {
-  background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
     border-radius: 3%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 2%;
 }
 
 
   #body-grid {
       background-color:white;
       color: black;
-      text-align: center;
-      
+      text-align: center;  
   }
 
   .states{
+    color:black;
     text-shadow: 2px 2px 2px #aaaaaa;
+    border-bottom: solid 1px black;
+    font-size: 250%;
+  }
 
-    font-size: 300%;
+  #state-cont {
+    margin-top: 5%;
+    background-color:rgb(250, 250, 237);
+    border: solid 1px black;
+  }
+
+  #pic-cont {
   }
 
   .row {
-    margin-top: 6%;
+    margin-top: 10%;
   }
 
   /* Set the size of the div element that contains the map */
 .map-card {
-    margin-top: -3%;
-    margin-left: 15%;
     padding: 10px 10px 20px 10px;
   border: 1px solid #BFBFBF;
   background-color: white;
-  box-shadow: 5px 5px 5px #aaaaaa;
     border-radius: 3%;
+    margin-top: 5%;
 
-    height: 300px;
-    /* The height is 400 pixels */
-    width: 60%;
-    /* The width is the width of the web page */
+    height: 200px;
+    width: 100%;
   }
 
   .blog-footer {
-    margin-top: 5%;
+    border-top: solid 1px black;
+    margin-top: 3%;
+    padding-top: 3%;
+    background-color: rgb(242, 242, 243);
   }
 
 

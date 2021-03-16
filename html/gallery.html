@@ -132,6 +132,27 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail" align="center">
+          <img src="../gallery/capitol.jpg" class="rounded" alt="...">
+          <div class="centered">Capitol Reef</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail" align="center">
+          <img src="../gallery/carls.jpg" class="rounded" alt="...">
+          <div class="centered">Carlsbad Caverns</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail" align="center">
+          <img src="../gallery/channel.jpg" class="rounded" alt="...">
+          <div class="centered">Channel Islands</div>
+        </div>
+      </div>
+    </div>
+
     <!-- pagination -->
     <nav aria-label="...">
         <ul class="pagination">
@@ -189,17 +210,33 @@
 
 <script>
   $(function () {
-    $.getJSON("https://api.nasa.gov/planetary/apod?api_key=CEPZBT7Hzu32m4BCmgMzyg5OG3AXb6T4S1kquGud",
-        function (data) {
-            console.log(data)
-            
-        }
-    );
+    $(".row").scroll(function () { 
+      
+    });
+  });
+</script>
+
+<!--scroll-->
+<script>
+  $(window).on("load",function() {
+$(window).scroll(function() {
+var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+$(".col-md-4").each(function() {
+  /* Check the location of each desired element */
+  var objectBottom = $(this).offset().top + $(this).outerHeight();
+  
+  /* If the element is completely within bounds of the window, fade it in */
+  if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+    if ($(this).css("opacity")==0) {$(this).fadeTo(450,1);}
+  } else { //object goes out of view (scrolling up)
+    if ($(this).css("opacity")==1) {$(this).fadeTo(450,0);}
+  }
+});
+}).scroll(); //invoke scroll-handler on page-load
 });
 </script>
 
 
   
-</body>
 </body>
 </html>

@@ -20,7 +20,7 @@ h2 {
 #card-cont{
   background-color: rgb(250, 250, 237) ;
   padding: 10%;
-  border-radius: 10%;
+  border-radius: 2em;
   border:solid 1px black;
   margin-bottom: 5%;
 }
@@ -65,14 +65,17 @@ h2 {
     margin-top: 5%;
     background-color:rgb(250, 250, 237);
     border: solid 1px black;
+    border-radius: 2em;
+
   }
 
-  #pic-cont {
-  }
 
   .row {
-    margin-top: 10%;
+    margin: 50px;
+  opacity: 1;
   }
+
+  
 
   /* Set the size of the div element that contains the map */
 .map-card {

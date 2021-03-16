@@ -13,6 +13,24 @@
         body {
             font-family:Arial, Helvetica, sans-serif;
         }
+        .col-md-4 {
+    margin-left:-100%;
+    max-width:100%;
+}
+#bot-row {
+  padding: 5%;
+  background-color:rgb(186, 216, 218);
+
+}
+#top-row {
+  background-color: rgb(146, 212, 214);
+  margin-top: -65px;
+  padding:5%
+
+}
+        
+
+        
         
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,7 +46,7 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-sm navbar-light bg-transparent" id="navy">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navy">
         <a class="navbar-brand" href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i></span><span> Home</span></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -177,7 +195,7 @@
 
     <!-- BODY -->
 
-<div class="row">
+<div class="row" id="top-row">
   <div class="col-md-4">
           <div class="card text-center" id="card-cont">
         <div class="card-body">
@@ -213,7 +231,7 @@
 
 </div>
 
-<div class="row">
+<div class="row" id="bot-row">
   <div class="col-md-4">
           <div class="card text-center" id="card-cont">
         <div class="card-body">
@@ -286,7 +304,23 @@
   </script>
 
   <!-- scroll-->
+<script>
+ $(document).ready(function() {
+    $(window).scroll( function(){
+        $('.col-md-4').each( function(i){
+             
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'margin-left':'0px'},500);
+            }
+             
+        });
+    });
+});
 
+</script>
 
 </body>
 </html>

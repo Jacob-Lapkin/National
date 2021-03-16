@@ -5,20 +5,14 @@
     overflow: auto;
 }
 
-.row {
-  margin-bottom: -10%;
-}
 
-#gallery-head {
-  margin-top: 5%;
-  margin-bottom: -5%;
-}
+
+
 
 .thumbnail img{
     width: 75%;
     height: 75%;
     display: block;
-    box-shadow: 10px 10px 5px #aaaaaa;
 
 }
 
@@ -46,7 +40,13 @@
   
 .pagination {
     justify-content: center;
-    margin-top: 10%;
+  padding: 5%;
+  margin-bottom: -1px;
+}
+
+.paging {
+  background-color: rgb(186, 216, 218);
+
 }
 
 

@@ -13,6 +13,11 @@
         body {
             font-family:Arial, Helvetica, sans-serif;
         }
+
+        .row {
+            padding: 5%;
+        }
+      
         
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -67,7 +72,7 @@
     </nav>
 
         
-    <!-- BODY -->
+
 <div class="jumbotron jumbotron-fluid ">
     <div class="container">
         <h2 class="display-3">Popular state destinations</h2>
@@ -79,21 +84,18 @@
         </p>
     </div>
 </div>
-<div class="container-fluid" id="body-grid">
+    <!-- BODY --><div class="container-fluid" id="body-grid">
+
     <div class="row" id="alaska-row">
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div class="container" id="state-cont">
                 <p class="states">Alaska</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rem ipsa! Culpa obcaecati vitae iure animi quos. Neque voluptas recusandae eum ab, sint, fugit soluta dolor nemo, assumenda libero ea.</p>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="container">
-                
                 <div class="map-card"id="map"></div>
+
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <div class="container" id="pic-cont">
                 <img src="images/denali.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
             <!--The div element for the map -->
@@ -102,18 +104,15 @@
     </div>
 
 <div class="row" id="cal-row">
-    <div class="col-md-3">
+    <div class="col-md-4">
         <div class="container" id="state-cont">
             <p class="states">California</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae officia nobis, facilis placeat reprehenderit blanditiis minus aspernatur deserunt fugit quisquam ullam voluptate totam a ratione soluta omnis laborum error? Provident.</p>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="container">
             <div class="map-card" id="map3"></div>
+
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8">
         <div class="container" id="pic-cont">
             <img src="images/california.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         </div>
@@ -121,18 +120,15 @@
 </div>
 
 <div class="row" id="col-row">
-    <div class="col-md-3">
+    <div class="col-md-4">
         <div class="container" id="state-cont">
             <p class="states">Colorado</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae officia nobis, facilis placeat reprehenderit blanditiis minus aspernatur deserunt fugit quisquam ullam voluptate totam a ratione soluta omnis laborum error? Provident.</p>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="container">
             <div class="map-card" id="map1"></div>
+
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8">
         <div class="container" id="pic-cont">
             <img src="images/rocky2.0.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         </div>
@@ -140,36 +136,30 @@
 </div>
 
 <div class="row" id="mon-row">
-    <div class="col-md-3">
+    <div class="col-md-4">
         <div class="container" id="state-cont">
             <p class="states">Montana</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae officia nobis, facilis placeat reprehenderit blanditiis minus aspernatur deserunt fugit quisquam ullam voluptate totam a ratione soluta omnis laborum error? Provident.</p>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="container">
             <div class="map-card" id="map4"></div>
+
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8">
         <div class="container" id="pic-cont">
             <img src="images/glacier.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         </div>
     </div>
 </div>
 <div class="row" id="utah-row">
-    <div class="col-md-3">
+    <div class="col-md-4">
         <div class="container" id="state-cont">
             <p class="states">Utah</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae officia nobis, facilis placeat reprehenderit blanditiis minus aspernatur deserunt fugit quisquam ullam voluptate totam a ratione soluta omnis laborum error? Provident.</p>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="container">
             <div class="map-card" id="map2"></div>
+
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8">
         <div class="container" id="pic-cont">
             <img src="images/arches.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
         </div>
@@ -213,38 +203,38 @@
   }
   </script>
 
-  <script>
-      $(window).on("load",function() {
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".col-md-3").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(450,1);}
-      } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(450,0);}
-      }
-    });
-  }).scroll(); //invoke scroll-handler on page-load
-});
-  </script>
 
 <script>
     $(window).on("load",function() {
 $(window).scroll(function() {
   var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-  $(".col-md-6").each(function() {
+  $(".col-md-8").each(function() {
     /* Check the location of each desired element */
     var objectBottom = $(this).offset().top + $(this).outerHeight();
     
     /* If the element is completely within bounds of the window, fade it in */
     if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-      if ($(this).css("opacity")==0) {$(this).fadeTo(450,1);}
+      if ($(this).css("opacity")==0) {$(this).fadeTo(200,1);}
     } else { //object goes out of view (scrolling up)
-      if ($(this).css("opacity")==1) {$(this).fadeTo(450,0);}
+      if ($(this).css("opacity")==1) {$(this).fadeTo(200,0);}
+    }
+  });
+}).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+<script>
+    $(window).on("load",function() {
+$(window).scroll(function() {
+  var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+  $(".col-md-4").each(function() {
+    /* Check the location of each desired element */
+    var objectBottom = $(this).offset().top + $(this).outerHeight();
+    
+    /* If the element is completely within bounds of the window, fade it in */
+    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+      if ($(this).css("opacity")==0) {$(this).fadeTo(200,1);}
+    } else { //object goes out of view (scrolling up)
+      if ($(this).css("opacity")==1) {$(this).fadeTo(200,0);}
     }
   });
 }).scroll(); //invoke scroll-handler on page-load

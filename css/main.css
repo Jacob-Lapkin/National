@@ -67,25 +67,25 @@ h2 {
 
   /* state rows*/
   #alaska-row {
-    background-color: rgb(146, 212, 214);
+    background-color: rgb(111, 221, 177);
     margin-top:-32px ;
 
   }
 
   #cal-row {
-    background-color: rgb(186, 216, 218);
+    background-color: rgb(201, 221, 111);
   }
 
   #col-row {
-    background-color: rgb(146, 212, 214);
+    background-color: rgb(111, 221, 177);
   }
 
   #mon-row {
-    background-color: rgb(186, 216, 218);
+    background-color: rgb(201, 221, 111);
   }
 
   #utah-row {
-    background-color: rgb(146, 212, 214);
+    background-color: rgb(111, 221, 177);
   }
   
 
